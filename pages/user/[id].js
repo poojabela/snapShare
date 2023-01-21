@@ -24,8 +24,8 @@ const Profile = ({ user }) => {
         <h1 className='mb-[2%] text-[25px] font-pacifico text-[#9933ff]'>{ user.name }</h1>
         <div className='flex'>
           {user.posts.map(post => (
-            <div className='w-[300px] h-[300px]  ml-[3%]'>
-              <img src={post.imageUrl} alt="" className='w-[100%] h-[100%]'/>
+            <div className='w-[300px] h-[300px]  ml-[3%]' key={post.id}>
+              <img src={post.imageUrl} alt="" className='w-[100%] h-[100%]' />
             </div>
           ))}
         </div>
