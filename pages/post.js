@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 
 const Post = () => {
   const user = useSession()
-  console.log(user)
   const Router = useRouter()
 
   const handleSubmit = async (event) => {

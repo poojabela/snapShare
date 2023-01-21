@@ -6,8 +6,6 @@ const Like = ({ postId }) => {
 
     const session = useSession();
 
-    console.log(session)
-
     const handleLike = async (event) => {
         event.preventDefault();
 
