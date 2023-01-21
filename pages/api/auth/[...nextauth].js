@@ -3,6 +3,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import { db } from '../../../db'
 
 export const authOption = {
+    secret: "heloo",
     providers: [
         CredentialsProvider({
           name: "Credentials",
