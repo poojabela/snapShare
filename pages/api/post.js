@@ -6,7 +6,11 @@ export default async function handler (req, res) {
 
     const newPost = await db.post.create({
         data: {
-            userId: body.userID,
+            user: {
+                connect: {
+                    id: body.userID
+                }
+            },
             imageUrl: body.imageUrl,
             caption: body.caption
         }
